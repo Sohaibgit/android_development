@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/relativeLayout"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView 1"
+        android:id="@+id/textView1"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:background="#E91E63"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView 2"
+        android:id="@+id/textView2"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:layout_toEndOf="@+id/textView1"
+        android:background="#9C27B0"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView 3"
+        android:id="@+id/textView3"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:layout_toEndOf="@+id/textView2"
+        android:background="#F44336"
+        />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:background="#F44336"
+        android:padding="10dp"
+        android:text="TextView 4"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

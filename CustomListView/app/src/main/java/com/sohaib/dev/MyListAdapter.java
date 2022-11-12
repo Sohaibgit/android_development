@@ -12,16 +12,16 @@ import androidx.annotation.Nullable;
 
 public class MyListAdapter extends ArrayAdapter<String> {
 
-    private String[] froms;
+    private String[] from;
     private String[] content;
     private Integer[] imageIds;
     private Activity context;
 
-    public MyListAdapter(Activity context, String[] froms, String[] content, Integer[] imageIds) {
-        super(context, R.layout.my_listview_layput, froms);
+    public MyListAdapter(Activity context, String[] from, String[] content, Integer[] imageIds) {
+        super(context, R.layout.my_listview_layput, from);
 
         this.context = context;
-        this.froms = froms;
+        this.from = from;
         this.imageIds = imageIds;
         this.content = content;
     }
@@ -36,7 +36,7 @@ public class MyListAdapter extends ArrayAdapter<String> {
         TextView contentTv = convertView.findViewById(R.id.descriptionTv);
 
         imageView.setImageResource(imageIds[position]);
-        nameTv.setText(froms[position]);
+        nameTv.setText(from[position]);
         contentTv.setText(content[position]);
 
         return convertView;
