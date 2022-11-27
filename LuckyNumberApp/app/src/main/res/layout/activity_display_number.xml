@@ -7,16 +7,15 @@
     tools:context=".DisplayNumber">
 
     <TextView
+        style="@style/headerStyle"
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="67dp"
-        android:text="Your Lucky Number is:"
+        android:text="@string/your_lucky_number_is"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:textSize="20sp"
-        android:textStyle="bold"
         />
 
     <TextView
@@ -35,9 +34,10 @@
         android:id="@+id/shareLuckyNumberBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="264dp"
-        android:text="Share"
+        android:layout_marginTop="280dp"
+        android:text="@string/share"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

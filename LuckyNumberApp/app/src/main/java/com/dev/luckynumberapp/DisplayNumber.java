@@ -26,7 +26,7 @@ public class DisplayNumber extends AppCompatActivity {
         String name = intent.getStringExtra("name");
         int luckyNumber = getRandomNumber();
 
-        nameTextView.setText("" + luckyNumber);
+        nameTextView.setText(String.valueOf(luckyNumber));
 
         shareBtn.setOnClickListener(view -> {
             shareData(name, String.valueOf(luckyNumber));
@@ -36,8 +36,8 @@ public class DisplayNumber extends AppCompatActivity {
     private void shareData(String name, String luckyNumber) {
         Intent i = new Intent(Intent.ACTION_SEND);
         i.setType("pain/text");
-        i.putExtra(Intent.EXTRA_SUBJECT, name + " got lucky today!");
-        i.putExtra(Intent.EXTRA_TEXT, "His lucky number is " + luckyNumber);
+        i.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.email_subject, name));
+        i.putExtra(Intent.EXTRA_TEXT, getString(R.string.email_body, luckyNumber));
 
         startActivity(Intent.createChooser(i, "Choose a platform to share data"));
     }

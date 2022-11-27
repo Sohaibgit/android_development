@@ -1,3 +1,10 @@
-<resources>
-    <string name="app_name">LuckyNumberApp</string>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Lucky Number App</string>
+    <string name="welcome_message">Welcome to Lucky Number App</string>
+    <string name="enter_name">Enter your name</string>
+    <string name="submit">Submit</string>
+    <string name="email_subject"><xliff:g id="name" example="Sohaib">%s</xliff:g> got lucky today!</string>
+    <string name="email_body">His lucky number is <xliff:g id="lucky_number" example="86">%s</xliff:g></string>
+    <string name="your_lucky_number_is">Your Lucky Number is:</string>
+    <string name="share">Share</string>
 </resources>
