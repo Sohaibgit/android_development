@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">لکی نمبر ایپ</string>
+    <string name="welcome_message">لکی نمبر ایپ میں خوش امدیید</string>
+    <string name="enter_name">اپنا نام درج کریں</string>
+    <string name="submit">سبمٹ کریں</string>
+    <string name="email_subject"><xliff:g id="name" example="Sohaib">%s</xliff:g>آج لکی ثابت ہوئے </string>
+    <string name="email_body"><xliff:g id="lucky_number" example="86">%s</xliff:g>اسکا لکی نمبر ہے </string>
+    <string name="your_lucky_number_is">آپ کا لکی نمبر ہے :</string>
+    <string name="share">شیئر کریں</string>
+</resources>
