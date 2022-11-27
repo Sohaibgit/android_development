@@ -16,7 +16,7 @@ dp = density independent pixles - best used for view's size
         <item name="colorPrimary">@color/purple_500</item>
         <!-- Status Bar -->
         <item name="colorPrimaryVariant">@color/purple_700</item>
-        <!-- Color on Buttons -->
+        <!-- Text Color on Buttons -->
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. EditText -->
         <item name="colorSecondary">@color/teal_200</item>
