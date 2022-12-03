@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#EFEFEF"
+    android:layout_marginBottom="5dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/music_player_icon"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/music_icon"
+        />
+
+    <TextView
+        android:id="@+id/song_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        tools:text="Songs"
+        android:layout_toEndOf="@+id/music_player_icon"
+        android:textColor="@android:color/black"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        />
+</RelativeLayout>

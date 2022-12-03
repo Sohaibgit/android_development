@@ -1,6 +1,8 @@
 package com.dev.soh;
 
-public class AudioModel {
+import java.io.Serializable;
+
+public class AudioModel implements Serializable {
     private String title;
     private String path;
     private String duration;
