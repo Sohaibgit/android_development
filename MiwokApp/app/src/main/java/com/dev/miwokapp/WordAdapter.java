@@ -15,8 +15,7 @@ import androidx.core.content.ContextCompat;
 import java.util.ArrayList;
 
 public class WordAdapter extends ArrayAdapter<Word> {
-
-    private int colorResourceId;
+    private final int colorResourceId;
 
     public WordAdapter(Activity context, ArrayList<Word> words, int colorResourceId) {
         super(context, 0, words);

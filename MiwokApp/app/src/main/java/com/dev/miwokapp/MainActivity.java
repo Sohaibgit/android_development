@@ -8,17 +8,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextView numbersTextView, colorsTextView, familyTextView, phrasesTextView;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        numbersTextView = findViewById(R.id.numbers);
-        colorsTextView = findViewById(R.id.colors);
-        familyTextView = findViewById(R.id.family);
-        phrasesTextView = findViewById(R.id.phrases);
+        TextView numbersTextView = findViewById(R.id.numbers);
+        TextView colorsTextView = findViewById(R.id.colors);
+        TextView familyTextView = findViewById(R.id.family);
+        TextView phrasesTextView = findViewById(R.id.phrases);
 
         numbersTextView.setOnClickListener(view -> {
             Intent numbersIntent = new Intent(this, NumbersActivity.class);

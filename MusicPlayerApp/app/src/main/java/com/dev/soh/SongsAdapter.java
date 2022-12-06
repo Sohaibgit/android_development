@@ -2,19 +2,21 @@ package com.dev.soh;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-import java.util.List;
+import java.util.ArrayList;
 
 public class SongsAdapter extends RecyclerView.Adapter<SongsAdapter.SongsViewHolder> {
-    private List<AudioModel> songs;
-    private Context context;
+    private final ArrayList<Song> songs;
+    private final Context context;
 
-    public SongsAdapter(List<AudioModel> songs, Context context) {
+    public SongsAdapter(ArrayList<Song> songs, Context context) {
         this.songs = songs;
         this.context = context;
     }
@@ -28,13 +30,24 @@ public class SongsAdapter extends RecyclerView.Adapter<SongsAdapter.SongsViewHol
 
     @Override
     public void onBindViewHolder(@NonNull SongsViewHolder holder, int position) {
-        AudioModel song = songs.get(position);
+        Song song = songs.get(position);
         holder.songTitleTv.setText(song.getTitle());
+
+        // highlighting selected song
+        if (MediaPlayerHelper.getCurrentIndex() == position){
+            holder.songTitleTv.setTextColor(Color.parseColor("#FF0000"));
+        }else {
+            holder.songTitleTv.setTextColor(Color.parseColor("#000000"));
+        }
+
         holder.itemView.setOnClickListener(v -> {
             MediaPlayerHelper.getMediaPlayer().reset();
+            MediaPlayerHelper.setCurrentIndex(position);
 
             Intent musicPlayerIntent = new Intent(context, MusicPlayerActivity.class);
-            musicPlayerIntent.putExtra("SONG", song);
+            Bundle args = new Bundle();
+            args.putParcelableArrayList("songsList", songs);
+            musicPlayerIntent.putExtras(args);
             context.startActivity(musicPlayerIntent);
         });
     }
