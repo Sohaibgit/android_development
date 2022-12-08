@@ -28,3 +28,11 @@ dp = density independent pixles - best used for view's size
     </style>
 </resources>
 ```
+
+**APIs**\
+Programmable Web API Directory: http://www.programmableweb.com/apis/directory \
+Google APIs Explorer: https://developers.google.com/apis-explorer/#p/ \
+Data.gov: http://data.gov
+
+**Tips for building a great UI**\
+https://developer.android.com/develop/ui
