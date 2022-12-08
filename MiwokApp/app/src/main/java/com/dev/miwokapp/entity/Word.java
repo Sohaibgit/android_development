@@ -1,4 +1,4 @@
-package com.dev.miwokapp;
+package com.dev.miwokapp.entity;
 
 public class Word {
     private final String defaultTranslation;

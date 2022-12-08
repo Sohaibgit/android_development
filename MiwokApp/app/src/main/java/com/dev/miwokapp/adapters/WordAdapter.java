@@ -1,4 +1,4 @@
-package com.dev.miwokapp;
+package com.dev.miwokapp.adapters;
 
 import android.app.Activity;
 import android.view.LayoutInflater;
@@ -11,6 +11,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.content.ContextCompat;
+
+import com.dev.miwokapp.R;
+import com.dev.miwokapp.entity.Word;
 
 import java.util.ArrayList;
 
