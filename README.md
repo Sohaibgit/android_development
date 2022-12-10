@@ -88,4 +88,8 @@ String strJson="
         }
 ```
 
+**Drawable Shapes**\
+https://guides.codepath.com/android/Drawables \
+https://developer.android.com/guide/topics/resources/drawable-resource.html?utm_source=udacity&utm_medium=course&utm_campaign=android_basics#Shape
+
 
