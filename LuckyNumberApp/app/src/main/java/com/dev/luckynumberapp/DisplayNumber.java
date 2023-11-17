@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
+import java.security.SecureRandom;
 
 import java.util.Random;
 
@@ -43,7 +44,7 @@ public class DisplayNumber extends AppCompatActivity {
     }
 
     private int getRandomNumber() {
-        Random random = new Random();
+        Random random = new SecureRandom();
         return random.nextInt(1000);
     }
 }
